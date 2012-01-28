@@ -12,5 +12,8 @@ class TestChop(unittest.TestCase):
     def test_element_missing(self):
         self.assertEqual(-1, chop(3, [1]))
 
+    def test_one_element(self):
+        self.assertEqual(0, chop(1, [1]))
+
 if __name__ == '__main__':
     unittest.main()
